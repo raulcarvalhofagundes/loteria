@@ -1,0 +1,258 @@
+programa
+{
+  // Raul Carvalho e Adrian José 
+	inclua biblioteca Util
+
+	inteiro listaSorteados[50] //maior numero de dezenas possível
+	
+	funcao inicio()
+	{
+		     escreva("\n______________\n")
+         	 	escreva("1 - Mega sena\n")
+          	escreva("2 - quina \n")
+          	escreva("3 - lotomania\n")
+          	escreva("4 - lotofacil\n")
+          	
+		 menu()
+	
+
+		
+	}funcao vazio menu(){
+		inteiro opcao
+		leia(opcao)
+		 escolha(opcao){
+		 
+		 caso 0:escreva("Opcao Inválida, Tente Novamente!\n")
+		 pare
+		 
+		 caso 1:mega_sena()
+		 pare
+		 
+		 caso 2:quina()
+		 pare
+		 
+		 caso 3:lotomania()
+		 pare
+		 
+		 caso 4:lotofacil()
+		 pare
+		 
+		 caso contrario: escreva("Opção Inválida, Tente Novamente!\n")
+		 pare
+		 }
+			
+			escreva("\n______________\n")
+         	 	escreva("1 - Mega sena\n")
+          	escreva("2 - quina \n")
+          	escreva("3 - lotomania\n")
+          	escreva("4 - lotofacil\n")
+          
+		 menu()
+		 
+	}
+		
+	funcao mega_sena(){
+		inteiro nu
+		escreva("Quantos números você quer você\n")
+		leia(nu)
+		se(nu<6){
+			escreva("tente outro\n")
+		}
+		se(nu>20){
+			escreva("tente outro\n")
+		}
+		senao{
+		sorteiaDezenas(nu, 1, 60)
+		ordenarLista(nu)
+		mostraSorteados(nu)
+			se(nu==6){
+				escreva("\nR$4,50 custo da rifa ")
+				    }
+		     se(nu==7){
+		     	escreva("\nR$31,50 custo da rifa ")	
+		     	    }
+	     	se(nu==8){
+		     	escreva("\nR$126,00 custo da rifa ")	
+		     	    }
+		    	se(nu==9){
+		     	escreva("\nR$945,00 custo da rifa ")	
+		     	    }
+		     se(nu==10){
+		     	escreva("\nR$2079,00 custo da rifa ")	
+		     	    }
+     	    	se(nu==11){
+		     	escreva("\nR$2079,00 custo da rifa ")	
+		     	    }
+     	     se(nu==12){
+		     	escreva("\nR$4158,00 custo da rifa ")	
+		     	    }
+		    	se(nu==13){
+		     	escreva("\nR$7722,00 custo da rifa ")	
+		     	    }
+		    	se(nu==14){
+		     	escreva("\nR$13513,50 custo da rifa ")	
+		     	    }
+     	    	se(nu==15){
+		     	escreva("\nR$22522,0 custo da rifa ")	
+		     	    }
+     	     se(nu==16){
+		     	escreva("\nR$36036,00 custo da rifa ")	
+		     	    }
+     	     se(nu==17){
+		     	escreva("\nR$55692,0 custo da rifa ")	
+		     	    }
+		    	se(nu==18){
+		     	escreva("\nR$83538,00 custo da rifa ")	
+		     	    }
+		    	se(nu==19){
+		     	escreva("\nR$122094,00 custo da rifa ")	
+		     	    }
+     	    	se(nu==20){
+		     	escreva("\nR$174420,00 custo da rifa ")	
+		     	    }			
+		}
+	}
+	funcao quina(){
+		inteiro nu 
+		escreva("Quantos numeros você quer você\n")
+		leia(nu)
+		se(nu<5){
+			escreva("tente outro\n")
+		}
+		se(nu>15){
+			escreva("tente outro\n")
+		}
+		senao{
+		sorteiaDezenas(nu, 1, 80)
+		ordenarLista(nu)
+		mostraSorteados(nu)
+			se(nu==5){
+	    			escreva("\nR$3,00 custou da rifa")
+	    			    }
+	    		se(nu==6){
+				escreva("\nR$3,00 custo da rifa ")
+				    }
+		     se(nu==7){
+		     	escreva("\nR$3,00 custo da rifa ")	
+		     	    }
+	     	se(nu==8){
+		     	escreva("\nR$3,00 custo da rifa ")	
+		     	    }
+		    	se(nu==9){
+		     	escreva("\nR$5,04 custo da rifa ")	
+		     	    }
+		     se(nu==10){
+		     	escreva("\nR$10,08 custo da rifa ")	
+		     	    }
+     	    	se(nu==11){
+		     	escreva("\nR$18,48 custo da rifa ")	
+		     	    }
+     	     se(nu==12){
+		     	escreva("\nR$31,68 custo da rifa ")	
+		     	    }
+		    	se(nu==13){
+		     	escreva("\nR$51,48 custo da rifa ")	
+		     	    }
+		    	se(nu==14){
+		     	escreva("\nR$80,08 custo da rifa ")	
+		     	    }
+     	    	se(nu==15){
+		     	escreva("\nR$120,12 custo da rifa ")	
+		     	    }	
+		}
+	}
+	funcao lotofacil(){
+		inteiro nu 
+		escreva("Quantos numeros você quer você")
+		leia(nu)
+		se(nu<15){
+			escreva("tente outro")
+		}
+		se(nu>20){
+			escreva("tente outro")
+		}
+		senao{
+		sorteiaDezenas(nu, 1, 25)
+		ordenarLista(nu)
+		mostraSorteados(nu)
+			se(nu==15){
+		     	escreva("\nR$2,50 custo da rifa ")	
+		     	    }
+     	    	se(nu==16){
+		     	escreva("\nR$40,00 custo da rifa ")	
+		     	    }
+		     se(nu==17){
+		     	escreva("\nR$340,00custo da rifa ")	
+		     	    }
+     	     se(nu==18){
+		     	escreva("\nR$2040,00 custo da rifa ")	
+		     	    }
+     	     se(nu==19){
+		     	escreva("\nR$9690,00 custo da rifa ")	
+		     	    }
+	     	se(nu==20){
+		     	escreva("\nR$38760,00 custo da rifa")
+	     			}
+		}
+	}
+	funcao lotomania(){
+		sorteiaDezenas(50, 1, 100)
+		ordenarLista(50)
+		mostraSorteados(50)
+	}
+	
+	funcao sorteiaDezenas(inteiro dezenas, inteiro min, inteiro max){
+
+		
+		
+	inteiro sorteado    = 0
+	logico estaRepetido = falso
+	
+	para(inteiro i=0; i < dezenas; i++){
+
+		estaRepetido = falso
+		
+		sorteado = sorteia(min, max)
+
+		
+		para(inteiro j=0; j < dezenas; j++){
+			se(listaSorteados[j] == sorteado){
+				estaRepetido = verdadeiro
+			 	pare
+		 }
+		}
+
+		se(nao estaRepetido){
+			listaSorteados[i] = sorteado
+		} senao {
+			i--
+		}
+		
+		
+	 }
+
+		escreva("\n")
+	}
+
+	funcao ordenarLista(inteiro qntdDezenas){
+
+		inteiro aux,j,i
+
+		     para( j=0; j < qntdDezenas - 1; j++){
+			para(i=0; i < qntdDezenas - 1 - j; i++){
+			se(listaSorteados[i] > listaSorteados[i+1]){
+				aux = listaSorteados[i]
+				listaSorteados[i] = listaSorteados[i+1]
+				listaSorteados[i+1] = aux
+				}
+			}
+
+		}
+	}
+
+	funcao mostraSorteados(inteiro dezenasNaLista){
+	para(inteiro i=0; i < dezenasNaLista; i++){
+			escreva(listaSorteados[i], " - ")
+		}
+	}
+}
